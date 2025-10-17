@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Histoire & Standards du Web – Amin Barbach</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    #hero {
+      background: linear-gradient(to right, #4f46e5, #3b82f6);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .content-section {
+      padding: 3rem 2rem;
+      background: white;
+      margin: 1rem auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      #hero {
+        padding: 2rem 1rem;
+      }
+
+      .content-section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🌐 Web Explorer</div>
+      <ul>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#url">URL & HTTP</a></li>
+        <li><a href="#domaines">Domaines</a></li>
+        <li><a href="#standards">Standards</a></li>
+        <li><a href="#securite">Sécurité</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Comprendre le Web Moderne</h1>
+      <p>Une synthèse claire des grands principes du web, ses risques et ses standards.</p>
+    </section>
+
+    <section id="timeline" class="content-section">
+      <h2>📜 Timeline du Web</h2>
+      <ul>
+        <li><strong>1991 :</strong> Lancement du World Wide Web – mise à disposition publique par Tim Berners-Lee.</li>
+        <li><strong>1995 :</strong> HTML 2.0 – premiers standards.</li>
+        <li><strong>2004 :</strong> Web 2.0 – Interaction, réseaux sociaux, AJAX.</li>
+        <li><strong>2010 :</strong> HTML5 – multimédia intégré, sans plugins.</li>
+        <li><strong>2020 :</strong> Web 3.0 – décentralisation, blockchain, IA.</li>
+      </ul>
+    </section>
+
+    <section id="url" class="content-section">
+      <h2>🔗 URL & Protocoles HTTP</h2>
+      <p><strong>Structure d’une URL :</strong> <code>https://www.exemple.com/page?param=1</code></p>
+      <ul>
+        <li><strong>HTTPS :</strong> Protocole sécurisé</li>
+        <li><strong>Nom de domaine :</strong> www.exemple.com</li>
+        <li><strong>Chemin :</strong> /page</li>
+        <li><strong>Paramètre :</strong> ?param=1</li>
+      </ul>
+      <p><strong>Codes de statut HTTP :</strong></p>
+      <ul>
+        <li>200 OK – Tout va bien</li>
+        <li>301 Moved Permanently – Redirection permanente</li>
+        <li>302 Found – Redirection temporaire</li>
+        <li>404 Not Found – Page non trouvée</li>
+      </ul>
+    </section>
+
+    <section id="domaines" class="content-section">
+      <h2>🌍 Noms de Domaine & DNS</h2>
+      <p><strong>Principe :</strong> Adresse lisible par l’humain reliée à une IP serveur.</p>
+      <p><strong>Cycle de vie :</strong> Réservation → Délégation → Expiration</p>
+      <p><strong>Acteurs :</strong> ICANN, registraires (OVH, Gandi, GoDaddy…)</p>
+      <p><strong>DNS :</strong> Système qui traduit les noms de domaines en adresses IP.</p>
+    </section>
+
+    <section id="standards" class="content-section">
+      <h2>⚙️ Standards du Web</h2>
+      <p>Le <strong>W3C</strong> (World Wide Web Consortium) crée les standards comme HTML, CSS, etc.</p>
+      <p>Ces standards garantissent la compatibilité entre navigateurs et évitent le chaos technique.</p>
+    </section>
+
+    <section id="securite" class="content-section">
+      <h2>🔐 Sécurité sur le Web</h2>
+      <p><strong>Menaces courantes :</strong></p>
+      <ul>
+        <li>Phishing – Tentatives de vol d’identifiants</li>
+        <li>Malware – Logiciels malveillants</li>
+        <li>Brute Force – Tentatives massives de connexion</li>
+        <li>Scraping – Extraction de contenu automatique</li>
+      </ul>
+      <p><strong>Bonnes pratiques :</strong></p>
+      <ul>
+        <li>HTTPS obligatoire</li>
+        <li>Mots de passe forts & double authentification</li>
+        <li>Mise à jour régulière des systèmes</li>
+        <li>Limiter les tentatives de connexion</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Amin Barbach – Site généré avec IA.</p>
+    <p>Sources disponibles sur demande.</p>
+  </footer>
+
+  <script>
+    // Animation simple au scroll
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.content-section').forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.style.opacity = 1;
+          section.style.transform = 'translateY(0)';
+        }
+      });
+    });
+
+    // Initialisation animation
+    document.querySelectorAll('.content-section').forEach(section => {
+      section.style.opacity = 0;
+      section.style.transform = 'translateY(30px)';
+      section.style.transition = 'all 0.6s ease-out';
+    });
+  </script>
+</body>
+</html>
